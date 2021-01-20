@@ -4,6 +4,8 @@ project(ollvm-plug)
 
 set(CMAKE_CXX_FLAGS "-Wall -fno-rtti")
 
+set(LLVM_DIR /home/azimao/work/llvm/llvm-project/llvm/cmake-build-debug/lib/cmake/llvm)
+
 find_package(LLVM REQUIRED CONFIG)
 
 message(STATUS "Found LLVM ${LLVM_PACKAGE_VERSION}")
